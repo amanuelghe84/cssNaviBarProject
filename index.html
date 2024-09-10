@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+
+    <!-- syntactic sugar
+    div>{Home}+a[ href="about.php"]{About}+a[href="contatct.php"]+{Contact} -->
+    <!-- <div>
+        <h1>Home</h1>
+        <a href="about.php">About</a>
+        <a href="contatct.php">Contact</a>
+
+
+    </div> -->
+    <!-- div>a[href="a.html"]{Visit a}+a[href="b.html"]{Visit b}+a[href="c.html"]{Visit c} -->
+<!-- <div>
+    <a href="a.html">Visit a</a>
+    <a href="b.html">Visit b</a>
+    <a href="c.html">Visit c</a>
+</div> -->
+
+<!-- {} = content
+[] = attribute
+> = child
++ = sibling -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contatct">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+    </ul>
+</nav>
 </body>
 </html>
